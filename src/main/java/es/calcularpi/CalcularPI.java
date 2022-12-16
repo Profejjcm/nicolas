@@ -48,7 +48,8 @@ public class CalcularPI {
             //Tenemos que seleccionar el codigo que vamos sacar, entramos en "refactor", "introduce", "method", le ponemos ek nombre y le damos a la opcion de publico.
             BigDecimal piK = ClasePadre.piFunction(k, mc);
             //Ahora lo metemos en la clase padre
-
+            //Para poner el metodo a una clase, creamos la clase, seleccionamos el metodo le damos a mover y miramos a qué clase lo vamos a mover.
+            
 //meter en el método piFunction
                 
             pi = pi.add(piK);
