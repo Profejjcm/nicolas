@@ -43,12 +43,17 @@ public class CalcularPI {
             multiplier = one.divide(multiplier, mc);
             val = val.multiply(multiplier);
             BigDecimal piK = piFunction(k, mc);
+            
+            
             //Tenemos que seleccionar el codigo que vamos sacar, entramos en "refactor", "introduce", "method", le ponemos ek nombre y le damos a la opcion de publico.
-            //meter en el método piFunction
+            BigDecimal piK = ClasePadre.piFunction(k, mc);
+            //Ahora lo metemos en la clase padre
+
+//meter en el método piFunction
                 
             pi = pi.add(piK);
             if (piK.compareTo(limit) < 0) {
-                stop = true;
+               @@ -27,29 +27,5 @@ public static void compute(final int NUM_DIG, MathContext mc)
             }
         }
         System.out.println(pi.round(mc));
